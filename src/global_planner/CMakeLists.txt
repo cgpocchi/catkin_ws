@@ -107,8 +107,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
    INCLUDE_DIRS include
-   LIBRARIES global_planner
-   CATKIN_DEPENDS angles base_local_planner costmap_2d geometry_msgs nav_core roscpp
+#  LIBRARIES global_planner
+#  CATKIN_DEPENDS angles base_local_planner costmap_2d geometry_msgs nav_core roscpp
 #  DEPENDS system_lib
 )
 
