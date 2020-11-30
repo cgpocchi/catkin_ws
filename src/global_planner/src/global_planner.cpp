@@ -2,12 +2,15 @@
 
 #include <pluginlib/class_list_macros.h>
 
+// register this planner as a BaseGlobalPlanner plugin
 PLUGINLIB_EXPORT_CLASS(global_planner::GlobalPlanner,
                        nav_core::BaseGlobalPlanner)
 
 using namespace std;
 
+// Default Constructor
 namespace global_planner {
+
 GlobalPlanner::GlobalPlanner() {}
 
 GlobalPlanner::GlobalPlanner(std::string name,
@@ -25,6 +28,7 @@ bool GlobalPlanner::makePlan(const geometry_msgs::PoseStamped& start,
     for (int i = 0; i < 20; i++) {
         geometry_msgs::PoseStamped new_goal = goal;
         tf::Quaternion goal_quat = tf::createQuaternionFromYaw(1.54);
+
         new_goal.pose.position.x = -2.5 + (0.05 * i);
         new_goal.pose.position.y = -3.5 + (0.05 * i);
 
