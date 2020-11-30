@@ -1,0 +1,8 @@
+prefix=/home/cp/catkin_ws/devel
+
+Name: teb_planner
+Description: Description of teb_planner
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -135,14 +135,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/cp/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cp/catkin_ws/build/CMakeFiles /home/cp/catkin_ws/build/turtlebot3/turtlebot3/CMakeFiles/progress.marks
-	cd /home/cp/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot3/turtlebot3/all
+	cd /home/cp/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cp/catkin_ws/build/CMakeFiles /home/cp/catkin_ws/build/teb_planner/CMakeFiles/progress.marks
+	cd /home/cp/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 teb_planner/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cp/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/cp/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot3/turtlebot3/clean
+	cd /home/cp/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 teb_planner/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,12 +152,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/cp/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot3/turtlebot3/preinstall
+	cd /home/cp/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 teb_planner/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/cp/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot3/turtlebot3/preinstall
+	cd /home/cp/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 teb_planner/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
