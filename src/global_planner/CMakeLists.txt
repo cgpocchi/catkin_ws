@@ -106,7 +106,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-   INCLUDE_DIRS include
+#  INCLUDE_DIRS include
    LIBRARIES global_planner
 #  CATKIN_DEPENDS angles base_local_planner costmap_2d geometry_msgs nav_core roscpp
 #  DEPENDS system_lib
@@ -208,3 +208,4 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
+add_library(global_planner src/global_planner/global_planner.cpp)
