@@ -7,7 +7,9 @@
   </include>
 
   <!-- Run the map server -->
-  <node name="map_server" pkg="map_server" type="map_server" args="$(find teb_planner)/map/map.yaml" />
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find teb_planner)/map/map.yaml" >
+    <param name="frame_id" value="map"/>
+  </node>
   
   <!-- Localization -->
    <arg name="initial_pose_x" default="0.0"/>
